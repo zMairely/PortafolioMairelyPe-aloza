@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Web</title>
+  <!-- Bootstrap y librerías necesarias -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/animate.css/animate.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">Mi Portafolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#certificates">Certificados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- Sección de bienvenida -->
+<header class="hero-section text-center text-white d-flex align-items-center justify-content-center" id="home">
+  <!-- Fondo de video -->
+  <div class="video-background">
+    <video autoplay muted loop id="background-video">
+      <source src="Imagenes/6963744-hd_1920_1080_25fps.mp4" type="video/mp4">
+      Tu navegador no soporta el formato de video.
+    </video>
+  </div>
+  <div class="container">
+    <h1 class="display-3">Hola, soy Mairely Peñaloza Cardoz </h1>
+    <p class="lead">Desarrollador Web con pasión por crear soluciones innovadoras</p>
+  </div>
+</header>
+
+
+ <!-- Sección de Acerca de -->
+<section class="about-section py-5" id="about">
+  <div class="container text-center">
+    <h2 class="display-4 mb-4">Acerca de mí</h2>
+    <div class="profile-container">
+      <div class="profile-circle animate__animated animate__zoomIn">
+        <img src="Imagenes/WhatsApp Image 2025-02-12 at 4.18.45 PM.jpeg" alt="Foto de perfil" class="profile-img">
+      </div>
+    </div>
+    <p class="lead">Soy una desarrolladora web con experiencia en la creación de soluciones efectivas. Tengo un fuerte enfoque en frontend y backend utilizando tecnologías como HTML, CSS, JavaScript, React, Node.js, y manejo de datos. Además, tengo experiencia en atención al cliente, organización de mercancías y manejo de transacciones, lo que me permite comprender mejor las necesidades de los usuarios.</p>
+    <p>Con diplomas en tecnologías de la información y el manejo de diversas herramientas para gestionar el estrés y el trabajo en equipo, mi objetivo es seguir aprendiendo y contribuir en proyectos innovadores.</p>
+  </div>
+</section>
+
+
+
+
+<!-- Sección de Proyectos --> 
+<section class="projects-section py-5" id="projects">
+  <div class="container text-center">
+    <h2 class="display-4 mb-4">Proyectos</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card project-card animate__animated animate__fadeInUp">
+          <img src="Imagenes/Captura de pantalla 2025-02-12 172131.png" class="card-img-top" alt="Proyecto 1">
+          <div class="card-body">
+            <h5 class="card-title">COMPILADOR PCL</h5>
+            <p class="card-text">El proyecto PCLenguage es un compilador especializado en el entendimiento y desarrollo del código PCL, capaz de compilar el lenguaje detectando errores y funciones.</p>
+            <a href="https://github.com/zMairely/Proyecto-ticket" class="btn btn-pink" target="_blank">Ver Proyecto</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card project-card animate__animated animate__fadeInUp">
+          <img src="Imagenes/WhatsApp Image 2025-02-12 at 5.20.54 PM.jpeg" class="card-img-top" alt="Proyecto 2">
+          <div class="card-body">
+            <h5 class="card-title">GENERADOR DE TICKETS</h5>
+            <p class="card-text">Un proyecto novedoso capaz de generar tickets con datos creados en su base de datos correspondiente, manteniendo simplicidad y procedimientos de la empresa correspondientes.</p>
+            <a href="https://github.com/zMairely/Proyecto-ticket" class="btn btn-pink" target="_blank">Ver Proyecto</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card project-card animate__animated animate__fadeInUp">
+          <img src="Imagenes/WhatsApp Image 2025-02-12 at 5.20.55 PM.jpeg" class="card-img-top" alt="Proyecto 3">
+          <div class="card-body">
+            <h5 class="card-title">TALLER CASTILLO</h5>
+            <p class="card-text">Un proyecto enfocado en la empresa de carrocería "Taller Castillo" capaz de gestionar y monitorear el inventario de herramientas, asistencia de empleados, contacto de empresas y adelanto de sueldos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  <!-- Sección de Contacto -->
+  <section class="contact-section py-5" id="contact">
+    <div class="container text-center">
+      <h2 class="display-4 mb-4">Contacto</h2>
+      <p class="lead">Puedes contactarme por los siguientes medios:</p>
+      <div class="contact-info">
+        <p><i class="fas fa-phone-alt"></i> +52 9981330485</p>
+        <p><i class="fas fa-envelope"></i> mairelypenaloza20@gmail.com</p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/zMairely">GitHub</a></p>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animate.css/animate.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
